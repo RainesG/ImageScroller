@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图</title>
+    <link rel="stylesheet" href="./style/image-scroller.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrap" style="left: 0; top: 0;">
+            <a href="#"><img src="" alt=""></a>
+            <a href="#"><img src="" alt=""></a>
+            <a href="#"><img src="" alt=""></a>
+            <a href="#"><img src="" alt=""></a>
+        </div>
+        <div class="buttons">
+            <span class="on">1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+        </div>
+        <a href="javascript:;" class="arrow arrow_left"><img src="./images/leftarrow.png" alt=""></a>
+        <a href="javascript:;" class="arrow arrow_right"><img src="./images/rightarrow.png" alt=""></a>
+
+    </div>
+    <input type="text" autofocus id="direction" placeholder="请输入方向" list="choice">
+    <datalist id="choice">
+        <option value="x"></option>
+        <option value="y"></option>
+    </datalist>
+    <input type="text" id="ifAuto" placeholder="请输入是否自动播放" list="yesorno">
+    <datalist id="yesorno">
+        <option value="true"></option>
+        <option value="false"></option>
+    </datalist>
+    <button>确定</button>
+
+    <script src="./scripts/image-scroller.js"></script>
+</body>
+</html>
